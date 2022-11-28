@@ -5,6 +5,7 @@ cc.Class({
     ballNode: cc.Node,
     blockPrefab: cc.Prefab,
     blockAreaNode: cc.Node,
+    blockNode: cc.Node,
     // blockNodeArr: {
     //     default: [],
     //     type: Block
@@ -56,15 +57,14 @@ cc.Class({
     this.lastBlockPosX = this.ballNode.x; //最后一个方块的x轴
     this.blockNodeArr = [];
     for (let i = 0; i < 10; i++) {
-      let blockNode = cc.instantiate(this.blockPrefab);
+      let blockNode = cc.instantiate(this.blockNode);
+      blockNode.active = true
       blockNode.x = this.lastBlockPosX;
       blockNode.y = -128;
       this.blockAreaNode.addChild(blockNode);
       this.blockNodeArr.push(blockNode);
 
       this.lastBlockPosX += 200;
-
-      console.log(this.blockNodeArr)
     }
   },
 
