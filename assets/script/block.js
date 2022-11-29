@@ -6,33 +6,25 @@
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
 cc.Class({
+    name: 'block',
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        speed: {
+            default: 150
+        },
+        isStatic: {
+            default: true
+        }
     },
 
-    // LIFE-CYCLE CALLBACKS:
+    update (dt) {
+        if (this.isStatic) return
 
-    // onLoad () {},
-
-    start () {
-
-    },
-
-    // update (dt) {},
+        this.node.x -= this.speed * dt;
+    
+        if (this.node.x < -(cc.winSize.width + this.node.width) / 2) {
+            this.node.destroy();
+        }
+    }
 });
