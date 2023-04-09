@@ -18,10 +18,22 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     particleNode = null;
 
+    @property
+    originalX = 0
+
+    onLoad(): void {
+        this.originalX = this.node.x
+    }
+
+    update(dt): void {
+        this.node.x = this.originalX
+    }
+
     onCollisionEnter() {
         this.initParticle();
+        this.node.parent.getComponent("blockgroup").count += 1;
+        console.log(this.node, this.node.parent.getComponent("blockgroup").count);
         this.node.active = false;
-
     }
 
     //初始化粒子效果

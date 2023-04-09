@@ -14,20 +14,58 @@ export default class NewClass extends cc.Component {
     isStatic = true;
 
     @property
-    speed = 150;
+    isEnd = false;
+
+    @property
+    count = 0;
+
+    @property(cc.AudioSource)
+    audioSource = null;
+
+    @property(cc.Node)
+    groupAreaNode = null;
+
+    @property(cc.Node)
+    bg = null;
 
     // onLoad () {}
 
     start() {
         this.isStatic = false;
+        console.log(this, this.node)
     }
 
     update(dt) {
         if (this.isStatic) return
-        this.node.x -= 1;
-        // if (this.node.x < -(cc.winSize.width + this.node.width) / 2) {
-        //     this.node.destroy();
-        // }
+        {
+            this.node.x -= 300 * dt;
+            console.log("update",this.isStatic,this.node.x)
+        }
 
+        if (this.node.x <= -233 && this.audioSource.isPlaying == false) { this.audioSource.play(); }
+
+        if (this.node.getComponent("blockgroup").count != 17 && this.node.x <= -2635 && this.isEnd == false) {
+            this.isEnd = true;
+            console.log("again");
+            this.again();
+            // this.node.active = false;
+        }
+
+        if (this.node.getComponent("blockgroup").count == 17 && this.node.x <= -2635) {
+            //next
+        }
+    }
+
+    again(): void {
+
+        this.bg.getComponent("bg").initGroup()
+        // let groupNode = cc.instantiate(this.node)
+
+        // groupNode.active = true;
+        // groupNode.x = 365;
+        // groupNode.y = this.node.y;
+        // groupNode.getComponent("blockgroup").isStatic = false;
+
+        // this.groupAreaNode.addChild(groupNode);
     }
 }
