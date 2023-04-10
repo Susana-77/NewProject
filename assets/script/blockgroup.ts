@@ -45,7 +45,7 @@ export default class NewClass extends cc.Component {
             // console.log("update",this.isStatic,this.node.x)
         }
         
-        if (this.node.x <= 2165  && this.metroNome.isPlaying == false){
+        if (this.node.x <= 2164  && this.metroNome.isPlaying == false){
             this.metroNome.play();
         }
         // if (this.audioSource.isPlaying == true){
