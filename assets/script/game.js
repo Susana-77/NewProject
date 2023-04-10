@@ -1,5 +1,5 @@
 cc.Class({
-  name:'bg',
+  name: 'bg',
   extends: cc.Component,
 
   properties: {
@@ -19,14 +19,21 @@ cc.Class({
     //     type: Block
     // },
     startTime: Date.now(),
-    audioSource: {
+    metroNome: {
       type: cc.AudioSource,
       default: null,
+      _preload: true,
+      isPlaying: false,
     },
   },
 
   onLoad() {
     this.initGroup();
+// this.metroNome.play();
+  },
+
+  start() {
+
   },
 
   //   onDestroy() {
@@ -44,9 +51,15 @@ cc.Class({
 
   //初始化跳板
   initGroup(id = 1) {
+
+    // //播放节拍器音频
+    // this.audioPlay();
+    // // console.log(this.metroNome);
+
     // TODO: JS  模板字符串
     const defaultNode = this[`groupNode${id}`]
     let groupNode = cc.instantiate(defaultNode);
+
 
     groupNode.active = true;
     groupNode.x = 2165;
@@ -56,4 +69,10 @@ cc.Class({
 
     this.groupAreaNode.addChild(groupNode);
   },
+
+  // audioPlay() {
+  //   // console.log(this.metroNome.getComponent("bg").isPlaying);
+  //   this.metroNome.play()
+
+  // }
 });

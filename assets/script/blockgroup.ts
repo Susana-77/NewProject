@@ -22,6 +22,9 @@ export default class NewClass extends cc.Component {
     @property(cc.AudioSource)
     audioSource = null;
 
+    @property(cc.AudioSource)
+    metroNome = null;
+
     @property(cc.Node)
     groupAreaNode = null;
 
@@ -39,16 +42,33 @@ export default class NewClass extends cc.Component {
         if (this.isStatic) return
         {
             this.node.x -= 300 * dt;
-            console.log("update",this.isStatic,this.node.x)
+            // console.log("update",this.isStatic,this.node.x)
+        }
+        
+        if (this.node.x <= 2165  && this.metroNome.isPlaying == false){
+            this.metroNome.play();
+        }
+        // if (this.audioSource.isPlaying == true){
+        //     this.metroNome.stop();
+
+        // }
+
+        if (this.node.x <= -233 && this.audioSource.isPlaying == false) { 
+            this.audioSource.play(); 
+            console.log(this.audioSource.isPlaying)
+            // this.audioSource.isPlaying == true;
         }
 
-        if (this.node.x <= -233 && this.audioSource.isPlaying == false) { this.audioSource.play(); }
+     
 
         if (this.node.getComponent("blockgroup").count != 17 && this.node.x <= -2635 && this.isEnd == false) {
             this.isEnd = true;
             console.log("again");
             this.again();
-            // this.node.active = false;
+        }
+
+        if (this.node.x <= -3000 && this.isEnd == true){
+            this.node.active = false;
         }
 
         if (this.node.getComponent("blockgroup").count == 17 && this.node.x <= -2635) {
