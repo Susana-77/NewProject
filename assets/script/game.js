@@ -49,7 +49,7 @@ cc.Class({
     let groupNode = cc.instantiate(defaultNode);
 
     groupNode.active = true;
-    groupNode.x = 365;
+    groupNode.x = 2165;
     // groupNode.x = (cc.winSize.width + this.groupNode.width) / 2 + 100;
     groupNode.y = defaultNode.y;
     groupNode.getComponent("blockgroup").isStatic = false;

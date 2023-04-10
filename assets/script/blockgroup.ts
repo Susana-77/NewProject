@@ -58,7 +58,7 @@ export default class NewClass extends cc.Component {
 
     again(): void {
 
-        this.bg.getComponent("bg").initGroup()
+        this.bg.getComponent("bg").initGroup(1)
         // let groupNode = cc.instantiate(this.node)
 
         // groupNode.active = true;
