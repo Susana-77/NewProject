@@ -55,7 +55,8 @@ export default class NewClass extends cc.Component {
 
         if (this.node.x <= -233 && this.audioSource.isPlaying == false) { 
             this.audioSource.play(); 
-            console.log(this.audioSource.isPlaying)
+            this.metroNome.mute = true;
+            // console.log(this.audioSource.isPlaying)
             // this.audioSource.isPlaying == true;
         }
 
