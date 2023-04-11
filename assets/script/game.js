@@ -59,6 +59,7 @@ cc.Class({
     // TODO: JS  模板字符串
     const defaultNode = this[`groupNode${id}`]
     let groupNode = cc.instantiate(defaultNode);
+    console.log(groupNode);
 
 
     groupNode.active = true;

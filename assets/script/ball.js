@@ -35,23 +35,23 @@ cc.Class({
   },
 
   start(e) {
-    console.log("start", cc.director.isPaused());
+    // console.log("start", cc.director.isPaused());
     if (cc.director.isPaused()) {
       cc.director.resume();
-      console.log("resume");
+      // console.log("resume");
     } else {
       cc.director.pause();
-      console.log("pause");
+      // console.log("pause");
     }
   },
 
   //加速
   boost(e) {
-    console.log(e);
+    // console.log(e);
     if (this.initVel) {
       let rigidBody = this.node.getComponent(cc.RigidBody);
       rigidBody.linearVelocity = cc.v2(0, -1600);
-      console.log("加速");
+      // console.log("加速");
     }
   },
 });

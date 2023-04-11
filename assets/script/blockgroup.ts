@@ -36,6 +36,7 @@ export default class NewClass extends cc.Component {
     start() {
         this.isStatic = false;
         console.log(this, this.node)
+        console.log(this.node.childrenCount)
     }
 
     update(dt) {
@@ -59,10 +60,9 @@ export default class NewClass extends cc.Component {
             // console.log(this.audioSource.isPlaying)
             // this.audioSource.isPlaying == true;
         }
-
      
-
-        if (this.node.getComponent("blockgroup").count != 17 && this.node.x <= -2635 && this.isEnd == false) {
+        //again
+        if (this.node.getComponent("blockgroup").count != this.node.childrenCount && this.node.x <= -2635 && this.isEnd == false) {
             this.isEnd = true;
             console.log("again");
             this.again();
@@ -72,21 +72,19 @@ export default class NewClass extends cc.Component {
             this.node.active = false;
         }
 
-        if (this.node.getComponent("blockgroup").count == 17 && this.node.x <= -2635) {
-            //next
+        if (this.node.getComponent("blockgroup").count == this.node.childrenCount && this.node.x <= -2635 && this.isEnd == false) {
+            this.isEnd = true;
+            console.log("next")
+            this.next();
         }
     }
 
     again(): void {
-
-        this.bg.getComponent("bg").initGroup(1)
-        // let groupNode = cc.instantiate(this.node)
-
-        // groupNode.active = true;
-        // groupNode.x = 365;
-        // groupNode.y = this.node.y;
-        // groupNode.getComponent("blockgroup").isStatic = false;
-
-        // this.groupAreaNode.addChild(groupNode);
+        this.bg.getComponent("bg").initGroup(this.node.name.replace(/[^0-9]/ig,""))
     }
+
+    next(): void {
+        this.bg.getComponent("bg").initGroup(parseInt(this.node.name.replace(/[^0-9]/ig,"")) + 1)
+    }
+
 }
