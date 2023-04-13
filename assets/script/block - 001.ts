@@ -21,6 +21,9 @@ export default class NewClass extends cc.Component {
     @property
     originalX = 0
 
+    @property(cc.AudioSource)
+    s = null;
+
     onLoad(): void {
         this.originalX = this.node.x
     }
@@ -31,10 +34,17 @@ export default class NewClass extends cc.Component {
 
     onCollisionEnter() {
         this.initParticle();
+
+        this.playAudio();
+        
         this.node.parent.getComponent("blockgroup").count += 1;
         console.log(this.node, this.node.parent.getComponent("blockgroup").count);
         this.node.active = false;
     }
+
+    playAudio() {
+        this.s.play();
+      }
 
     //初始化粒子效果
     initParticle(): void {
