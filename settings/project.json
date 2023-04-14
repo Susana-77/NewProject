@@ -2,7 +2,7 @@
   "migrate-history": [
     "cloud-function"
   ],
-  "start-scene": "367f315e-ec0e-400e-b1d2-b756293077d9",
+  "start-scene": "current",
   "group-list": [
     "ball",
     "block",
