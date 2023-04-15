@@ -14,17 +14,19 @@ export default class NewClass extends cc.Component {
     sceneName: string = "";
 
     onLoad () {
-        cc.director.preloadScene(this.sceneName, function () {
-            cc.log("预加载场景完成");
-        });
+        cc.director.preloadScene(this.sceneName,this.preLoadSceneCallBack);
     }
 
-    loadSceneCallBack(){
-        console.log("加载场景完成");
+    preLoadSceneCallBack(){
+        console.log("预加载场景完成");
     }
 
     btnStartClick(e: cc.Event, custom: string) {
         cc.director.loadScene(this.sceneName,this.loadSceneCallBack);
+    }
+
+    loadSceneCallBack(){
+        console.log("加载场景完成");
     }
 
     btnQuitClick(e: cc.Event, custom: string) {

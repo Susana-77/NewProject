@@ -37,7 +37,16 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     bg = null;
 
-    // onLoad () {}
+    @property
+    sceneName: string = "";
+
+    onLoad () {
+        cc.director.preloadScene(this.sceneName,this.preLoadSceneCallBack);
+    }
+    
+    preLoadSceneCallBack(){
+        console.log("预加载场景done完成");
+    }
 
     start() {
         this.isStatic = false;
@@ -93,9 +102,10 @@ export default class NewClass extends cc.Component {
     next(): void {
         //当前loop为最后一个loop时，不需要再跳转到下一个loop
         if (parseInt(this.node.name.replace(/[^0-9]/ig, "")) == 7) {
-            this.audioSource.mute = true;
-            this.audioSource2.mute = true;
-            this.audioSource3.play();
+            cc.director.loadScene(this.sceneName,this.loadSceneCallBack);
+            // this.audioSource.mute = true;
+            // this.audioSource2.mute = true;
+            // this.audioSource3.play();
         }
         
         //正常next
@@ -106,4 +116,12 @@ export default class NewClass extends cc.Component {
         }
     }
 
+    loadSceneCallBack(){
+        console.log("加载场景done完成");
+    }
+
+    test(){
+        cc.director.loadScene(this.sceneName,this.loadSceneCallBack);
+
+    }
 }
