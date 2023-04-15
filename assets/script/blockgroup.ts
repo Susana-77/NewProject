@@ -67,12 +67,12 @@ export default class NewClass extends cc.Component {
         }
 
         //四小节预备拍
-        if (this.node.x <= 2164 && this.audioSource.isPlaying == false) {
+        if (this.node.x <= 2164 && this.audioSource?.isPlaying == false) {
             this.audioSource.play();
         }
 
         //开始当前loop
-        if (this.node.x <= -235 && this.audioSource.isPlaying == false) {
+        if (this.node.x <= -235 && this.audioSource?.isPlaying == false) {
             this.audioSource.play();
         }
 
