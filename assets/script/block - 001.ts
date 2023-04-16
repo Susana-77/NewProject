@@ -38,7 +38,7 @@ export default class NewClass extends cc.Component {
         this.playAudio();
         
         this.node.parent.getComponent("blockgroup").count += 1;
-        console.log(this.node, this.node.parent.getComponent("blockgroup").count);
+        // console.log(this.node.parent.getComponent("blockgroup").count);
         this.node.active = false;
     }
 
