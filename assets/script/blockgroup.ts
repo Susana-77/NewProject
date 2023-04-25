@@ -6,6 +6,8 @@
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
 const { ccclass, property } = cc._decorator;
+const loopNum = {loop1:7,loop2:4,loop3:8,loop4:5};
+const loopWIdth = {loop1:2400,loop2:1800,loop3:2400,loop4:2400};
 
 @ccclass('blockgroup')
 export default class NewClass extends cc.Component {
@@ -24,9 +26,6 @@ export default class NewClass extends cc.Component {
 
     @property(cc.AudioSource)
     audioSource2 = null;
-
-    @property(cc.AudioSource)
-    audioSource3 = null;
 
     @property(cc.AudioSource)
     metroNome = null;
@@ -83,6 +82,12 @@ export default class NewClass extends cc.Component {
     }
 
     update(dt) {
+        const preWidth = loopWIdth[cc.director.getScene().name]-236;
+        console.log(preWidth);
+
+        const afterWidth = -235-loopWIdth[cc.director.getScene().name];
+        console.log(afterWidth);
+
         //blockgroup移动
         if (this.isStatic) return
         {
@@ -95,7 +100,7 @@ export default class NewClass extends cc.Component {
         }
 
         //四小节预备拍
-        if (this.node.x <= 2164 && this.audioSource.isPlaying == false) {
+        if (this.node.x <= preWidth && this.audioSource.isPlaying == false) {
             this.show();
             this.starBlink();
             this.audioSource.play();
@@ -108,7 +113,7 @@ export default class NewClass extends cc.Component {
         }
 
         //again
-        if (this.node.getComponent("blockgroup").count != this.node.childrenCount && this.node.x <= -2635 && this.isEnd == false) {
+        if (this.node.getComponent("blockgroup").count != this.node.childrenCount && this.node.x <= afterWidth && this.isEnd == false) {
             console.log("again");
             this.isEnd = true;
 
@@ -116,7 +121,7 @@ export default class NewClass extends cc.Component {
         }
 
         //next
-        if (this.node.getComponent("blockgroup").count == this.node.childrenCount && this.node.x <= -2635 && this.isEnd == false) {
+        if (this.node.getComponent("blockgroup").count == this.node.childrenCount && this.node.x <= afterWidth && this.isEnd == false) {
             console.log("next");
             this.isEnd = true;
 
@@ -133,8 +138,10 @@ export default class NewClass extends cc.Component {
     }
 
     next(): void {
+        const groupNum = parseInt(this.node.name.replace(/[^0-9]/ig, ""));
+        
         //当前loop为最后一个loop时，不需要再跳转到下一个loop
-        if (parseInt(this.node.name.replace(/[^0-9]/ig, "")) == 7) {
+        if (groupNum === loopNum[cc.director.getScene().name]) {
             cc.director.loadScene(this.sceneName, this.loadSceneCallBack);
         }
 
@@ -151,7 +158,8 @@ export default class NewClass extends cc.Component {
     }
 
     starBlink() {
-        const blinkAction = cc.blink(8, 16);
+        const blinkAction = cc.blink(loopWIdth[cc.director.getScene().name]/300, loopWIdth[cc.director.getScene().name]/150);
+        console.log(loopWIdth[cc.director.getScene().name]/300, loopWIdth[cc.director.getScene().name]/150);
         this.star.runAction(blinkAction);
     }
 

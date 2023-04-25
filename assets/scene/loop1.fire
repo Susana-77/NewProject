@@ -1720,8 +1720,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
-        -170.696,
+        1197.268,
+        -187.513,
         0,
         0,
         0,
@@ -6946,7 +6946,6 @@
     "audioSource2": {
       "__id__": 44
     },
-    "audioSource3": null,
     "metroNome": {
       "__id__": 42
     },
@@ -6977,7 +6976,7 @@
     "starhide6": {
       "__id__": 20
     },
-    "sceneName": "",
+    "sceneName": "done1",
     "_id": "eayHbbb15O+LWbBIOZqPSK"
   },
   {
@@ -7053,9 +7052,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "03a8c845-9001-4f37-9ef5-e98237b3015b"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -7785,7 +7782,6 @@
     "audioSource2": {
       "__id__": 46
     },
-    "audioSource3": null,
     "metroNome": {
       "__id__": 42
     },
@@ -7814,7 +7810,7 @@
       "__id__": 20
     },
     "starhide6": null,
-    "sceneName": "",
+    "sceneName": "done1",
     "_id": "16DH5VentP+Jq3xt6ATJSm"
   },
   {
@@ -7832,9 +7828,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "03a8c845-9001-4f37-9ef5-e98237b3015b"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -8880,7 +8874,6 @@
     "audioSource2": {
       "__id__": 50
     },
-    "audioSource3": null,
     "metroNome": {
       "__id__": 42
     },
@@ -8907,7 +8900,7 @@
     },
     "starhide5": null,
     "starhide6": null,
-    "sceneName": "",
+    "sceneName": "done1",
     "_id": "33kv4xisRH8KNl08qgJjMO"
   },
   {
@@ -8925,9 +8918,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "03a8c845-9001-4f37-9ef5-e98237b3015b"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -10289,7 +10280,6 @@
     "audioSource2": {
       "__id__": 54
     },
-    "audioSource3": null,
     "metroNome": {
       "__id__": 42
     },
@@ -10314,7 +10304,7 @@
     "starhide4": null,
     "starhide5": null,
     "starhide6": null,
-    "sceneName": "",
+    "sceneName": "done1",
     "_id": "54Se7UxHNBYY+NF4IrHpRO"
   },
   {
@@ -10332,9 +10322,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "03a8c845-9001-4f37-9ef5-e98237b3015b"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -11064,7 +11052,6 @@
     "audioSource2": {
       "__id__": 68
     },
-    "audioSource3": null,
     "metroNome": {
       "__id__": 42
     },
@@ -11087,7 +11074,7 @@
     "starhide4": null,
     "starhide5": null,
     "starhide6": null,
-    "sceneName": "",
+    "sceneName": "done1",
     "_id": "64lBDJ/fJOpJT4eaJ0PaSB"
   },
   {
@@ -11105,9 +11092,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "03a8c845-9001-4f37-9ef5-e98237b3015b"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -12627,7 +12612,6 @@
     "audioSource2": {
       "__id__": 78
     },
-    "audioSource3": null,
     "metroNome": {
       "__id__": 42
     },
@@ -12648,7 +12632,7 @@
     "starhide4": null,
     "starhide5": null,
     "starhide6": null,
-    "sceneName": "",
+    "sceneName": "done1",
     "_id": "16JshT/wlMZr4kEHz6HXML"
   },
   {
@@ -12666,9 +12650,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "03a8c845-9001-4f37-9ef5-e98237b3015b"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -15294,9 +15276,6 @@
     "audioSource2": {
       "__id__": 88
     },
-    "audioSource3": {
-      "__id__": 98
-    },
     "metroNome": {
       "__id__": 42
     },
@@ -15333,9 +15312,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "03a8c845-9001-4f37-9ef5-e98237b3015b"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -15514,7 +15491,7 @@
     "node": {
       "__id__": 436
     },
-    "_enabled": true,
+    "_enabled": false,
     "tag": 0,
     "_offset": {
       "__type__": "cc.Vec2",
@@ -15538,14 +15515,6 @@
     "_enabled": true,
     "is_enable": true,
     "is_debug": true,
-    "blockgroup": null,
-    "audioSource1": null,
-    "audioSource2": null,
-    "audioSource3": null,
-    "audioSource4": null,
-    "audioSource5": null,
-    "audioSource6": null,
-    "audioSource7": null,
     "_id": "18KJC3BwhMtKJ2VcXOLSOD"
   },
   {
@@ -15616,6 +15585,7 @@
     "metroNome": {
       "__id__": 42
     },
+    "sceneName": "done1",
     "_id": "731CkUepJJa6HkSJHUY81D"
   },
   {

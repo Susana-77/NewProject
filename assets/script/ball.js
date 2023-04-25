@@ -50,7 +50,7 @@ cc.Class({
     // console.log(e);
     if (this.initVel) {
       let rigidBody = this.node.getComponent(cc.RigidBody);
-      rigidBody.linearVelocity = cc.v2(0, -1600);
+      rigidBody.linearVelocity = cc.v2(0, -10000);
       // console.log("加速");
     }
   },

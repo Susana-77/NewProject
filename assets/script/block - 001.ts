@@ -25,7 +25,7 @@ export default class NewClass extends cc.Component {
     s = null;
 
     onLoad(): void {
-        this.originalX = this.node.x
+        this.originalX = this.node.x;
     }
 
     update(dt): void {

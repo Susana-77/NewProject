@@ -423,7 +423,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        2,
+        1,
         -124,
         0,
         0,
@@ -465,11 +465,11 @@
     "_dstBlendFactor": 771,
     "_string": "Orion",
     "_N$string": "Orion",
-    "_fontSize": 20,
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -562,11 +562,11 @@
     "_dstBlendFactor": 771,
     "_string": "Orion",
     "_N$string": "Orion",
-    "_fontSize": 20,
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -617,7 +617,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -2,
+        -1,
         -126,
         0,
         0,
@@ -659,11 +659,11 @@
     "_dstBlendFactor": 771,
     "_string": "Orion",
     "_N$string": "Orion",
-    "_fontSize": 20,
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -1152,7 +1152,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        2,
+        1,
         -124,
         0,
         0,
@@ -1194,11 +1194,11 @@
     "_dstBlendFactor": 771,
     "_string": "Aries",
     "_N$string": "Aries",
-    "_fontSize": 20,
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -1291,11 +1291,11 @@
     "_dstBlendFactor": 771,
     "_string": "Aries",
     "_N$string": "Aries",
-    "_fontSize": 20,
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -1346,7 +1346,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -2,
+        -1,
         -126,
         0,
         0,
@@ -1388,11 +1388,11 @@
     "_dstBlendFactor": 771,
     "_string": "Aries",
     "_N$string": "Aries",
-    "_fontSize": 20,
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -1805,7 +1805,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        2,
+        1,
         -124,
         0,
         0,
@@ -1845,13 +1845,13 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "cetus",
-    "_N$string": "cetus",
-    "_fontSize": 20,
+    "_string": "Cetus",
+    "_N$string": "Cetus",
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -1942,13 +1942,13 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "cetus",
-    "_N$string": "cetus",
-    "_fontSize": 20,
+    "_string": "Cetus",
+    "_N$string": "Cetus",
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -1999,7 +1999,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -2,
+        -1,
         -126,
         0,
         0,
@@ -2039,13 +2039,13 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "cetus",
-    "_N$string": "cetus",
-    "_fontSize": 20,
+    "_string": "Cetus",
+    "_N$string": "Cetus",
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -2458,7 +2458,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        2,
+        1,
         -134,
         0,
         0,
@@ -2498,13 +2498,13 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "lyra",
-    "_N$string": "lyra",
-    "_fontSize": 20,
+    "_string": "Lyra",
+    "_N$string": "Lyra",
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -2595,13 +2595,13 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "lyra",
-    "_N$string": "lyra",
-    "_fontSize": 20,
+    "_string": "Lyra",
+    "_N$string": "Lyra",
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
@@ -2652,7 +2652,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -2,
+        -1,
         -136,
         0,
         0,
@@ -2692,13 +2692,13 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "lyra",
-    "_N$string": "lyra",
-    "_fontSize": 20,
+    "_string": "Lyra",
+    "_N$string": "Lyra",
+    "_fontSize": 35,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {
-      "__uuid__": "6274aab4-9b19-4a84-b5f2-d9e9f4becd39"
+      "__uuid__": "0f6d6028-b60c-444d-8933-43e0db6dc563"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
