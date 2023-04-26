@@ -83,10 +83,7 @@ export default class NewClass extends cc.Component {
 
     update(dt) {
         const preWidth = loopWIdth[cc.director.getScene().name]-236;
-        console.log(preWidth);
-
         const afterWidth = -235-loopWIdth[cc.director.getScene().name];
-        console.log(afterWidth);
 
         //blockgroup移动
         if (this.isStatic) return
@@ -159,7 +156,6 @@ export default class NewClass extends cc.Component {
 
     starBlink() {
         const blinkAction = cc.blink(loopWIdth[cc.director.getScene().name]/300, loopWIdth[cc.director.getScene().name]/150);
-        console.log(loopWIdth[cc.director.getScene().name]/300, loopWIdth[cc.director.getScene().name]/150);
         this.star.runAction(blinkAction);
     }
 
