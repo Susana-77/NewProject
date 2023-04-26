@@ -83,6 +83,7 @@ cc.Class({
     },
 
     onButtonClicked () {
+      console.log("123")
         this.isButtonPressed = !this.isButtonPressed;
         if (this.isButtonPressed) {
             this.pauseBtn.normalSprite = this.pressedSprite;
