@@ -6,6 +6,10 @@ cc.Class({
       default: null,
       type: cc.Button,
     },
+    pauseBtn: {
+      default: null,
+      type:cc.Button,
+    },
 
     blockGroup1: {
       default: null,
@@ -47,8 +51,8 @@ cc.Class({
     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.boost, this);
 
     this.goBtn.node.on("click", this.start, this);
-
-
+    this.pauseBtn.node.on("click", this.pauseGame, this);
+    this.pauseBtn.node.x = 10000;
 
     // 获取要控制的节点
     const groupNode1 = this.blockGroup1;
@@ -92,6 +96,7 @@ cc.Class({
     cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.boost, this);
     // this.node.on("mousedown", this.start, this);
     this.goBtn.node.on("click", this.start, this);
+    this.pauseBtn.node.on("click", this.pauseGame, this);
 
   },
 
@@ -112,16 +117,14 @@ cc.Class({
     }
   },
 
-//   start(e) {
-//     cc.director.resume();
-//   },
+  start(e) {
+    cc.director.resume();
+    this.goBtn.node.x = -10000;
+    this.pauseBtn.node.x = 404;
+  },
 
-//   onButtonClicked () {
-//     this.goBtn.node.on("click", this.pauseGame, this);
+  pauseGame() {
     
-// },
-
-  start() {
     if (cc.director.isPaused()) {
       this.audioSource1.resume();
       this.audioSource2.resume();
