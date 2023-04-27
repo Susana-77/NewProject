@@ -51,7 +51,7 @@ cc.Class({
     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.boost, this);
 
     this.goBtn.node.on("click", this.start, this);
-    this.pauseBtn.node.on("click", this.pauseGame, this);
+    // this.pauseBtn.node.on("click", this.pauseGame, this);
     this.pauseBtn.node.x = 10000;
 
     // 获取要控制的节点
@@ -89,14 +89,14 @@ cc.Class({
     this.audioSource8 = groupNode8.getComponent("blockgroup").audioSource;
     this.audioSource82 = groupNode8.getComponent("blockgroup").audioSource2;
 
-    cc.director.pause();
+    // cc.director.pause();
   },
 
   onDestroy() {
     cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.boost, this);
     // this.node.on("mousedown", this.start, this);
     this.goBtn.node.on("click", this.start, this);
-    this.pauseBtn.node.on("click", this.pauseGame, this);
+    // this.pauseBtn.node.on("click", this.pauseGame, this);
 
   },
 
@@ -123,51 +123,51 @@ cc.Class({
     this.pauseBtn.node.x = 404;
   },
 
-  pauseGame() {
+  // pauseGame() {
     
-    if (cc.director.isPaused()) {
-      this.audioSource1.resume();
-      this.audioSource2.resume();
-      this.audioSource3.resume();
-      this.audioSource4.resume();
-      this.audioSource5.resume();
-      this.audioSource6.resume();
-      this.audioSource7.resume();
-      this.audioSource8.resume();
+  //   if (cc.director.isPaused()) {
+  //     this.audioSource1.resume();
+  //     this.audioSource2.resume();
+  //     this.audioSource3.resume();
+  //     this.audioSource4.resume();
+  //     this.audioSource5.resume();
+  //     this.audioSource6.resume();
+  //     this.audioSource7.resume();
+  //     this.audioSource8.resume();
 
-      this.audioSource12.resume();
-      this.audioSource22.resume();
-      this.audioSource32.resume();
-      this.audioSource42.resume();
-      this.audioSource52.resume();
-      this.audioSource62.resume();
-      this.audioSource72.resume();
-      this.audioSource82.resume();
+  //     this.audioSource12.resume();
+  //     this.audioSource22.resume();
+  //     this.audioSource32.resume();
+  //     this.audioSource42.resume();
+  //     this.audioSource52.resume();
+  //     this.audioSource62.resume();
+  //     this.audioSource72.resume();
+  //     this.audioSource82.resume();
 
-      cc.director.resume();
+  //     cc.director.resume();
 
-    } else {
-      this.audioSource1.pause();
-      this.audioSource2.pause();
-      this.audioSource3.pause();
-      this.audioSource4.pause();
-      this.audioSource5.pause();
-      this.audioSource6.pause();
-      this.audioSource7.pause();
-      this.audioSource8.pause();
+  //   } else {
+  //     this.audioSource1.pause();
+  //     this.audioSource2.pause();
+  //     this.audioSource3.pause();
+  //     this.audioSource4.pause();
+  //     this.audioSource5.pause();
+  //     this.audioSource6.pause();
+  //     this.audioSource7.pause();
+  //     this.audioSource8.pause();
 
-      this.audioSource12.pause();
-      this.audioSource22.pause();
-      this.audioSource32.pause();
-      this.audioSource42.pause();
-      this.audioSource52.pause();
-      this.audioSource62.pause();
-      this.audioSource72.pause();
-      this.audioSource82.pause();
+  //     this.audioSource12.pause();
+  //     this.audioSource22.pause();
+  //     this.audioSource32.pause();
+  //     this.audioSource42.pause();
+  //     this.audioSource52.pause();
+  //     this.audioSource62.pause();
+  //     this.audioSource72.pause();
+  //     this.audioSource82.pause();
 
-      cc.director.pause();
-    }
-  },
+  //     cc.director.pause();
+  //   }
+  // },
 
   //加速
   boost(e) {
