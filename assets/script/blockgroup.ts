@@ -7,8 +7,8 @@
 
 const { ccclass, property } = cc._decorator;
 const loopNum = {loop1:7,loop2:4,loop3:8,loop4:5};
-const loopWIdth = {loop1:2400,loop2:1800,loop3:2400,loop4:2400};
-
+const loopWIdth = {loop1:2400,loop2:1800,loop3:2400,loop4:2880};
+const metroNome = {loop1:16,loop2:12,loop3:8,loop4:18};
 @ccclass('blockgroup')
 export default class NewClass extends cc.Component {
 
@@ -155,7 +155,7 @@ export default class NewClass extends cc.Component {
     }
 
     starBlink() {
-        const blinkAction = cc.blink(loopWIdth[cc.director.getScene().name]/300, loopWIdth[cc.director.getScene().name]/150);
+        const blinkAction = cc.blink(loopWIdth[cc.director.getScene().name]/300, metroNome[cc.director.getScene().name]);
         this.star.runAction(blinkAction);
     }
 

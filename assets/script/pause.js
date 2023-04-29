@@ -96,6 +96,7 @@ cc.Class({
     if (this.isButtonPressed) {
       this.pauseBtn.normalSprite = this.pressedSprite;
       this.pauseMenu.x = 0;
+      console.log(this.pauseMenu, this.pauseMenu.x, this.pauseMenu.y);
 
       this.audioSource1.pause();
       this.audioSource2.pause();
@@ -115,10 +116,14 @@ cc.Class({
       this.audioSource72.pause();
       this.audioSource82.pause();
 
+      // requestAnimationFrame(() => { cc.director.pause() }) ;
+      // cc.game.pause();
       cc.director.pause();
+
     } else {
       this.pauseBtn.normalSprite = this.defaultSprite;
       this.pauseMenu.x = 10000;
+      console.log(this.pauseMenu, this.pauseMenu.x, this.pauseMenu.y);
 
       this.audioSource1.resume();
       this.audioSource2.resume();
@@ -138,7 +143,9 @@ cc.Class({
       this.audioSource72.resume();
       this.audioSource82.resume();
 
+      // cc.game.resume();
       cc.director.resume();
+
     }
   },
 });
