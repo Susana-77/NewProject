@@ -7,8 +7,8 @@
 
 const { ccclass, property } = cc._decorator;
 const loopNum = {loop1:7,loop2:4,loop3:8,loop4:5};
-const loopWIdth = {loop1:2400,loop2:1800,loop3:2400,loop4:2880};
-const metroNome = {loop1:16,loop2:12,loop3:8,loop4:18};
+const loopWIdth = {loop1:2400,loop2:1800,loop3:3200,loop4:2880};
+const metroNome = {loop1:16,loop2:12,loop3:22,loop4:18};
 @ccclass('blockgroup')
 export default class NewClass extends cc.Component {
 
@@ -57,6 +57,9 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     starhide6 = null;
 
+    @property(cc.Node)
+    starhide7 = null;
+
     @property
     sceneName: string = "";
 
@@ -69,6 +72,7 @@ export default class NewClass extends cc.Component {
         this.hide4();
         this.hide5();
         this.hide6();
+        this.hide7();
     }
 
     preLoadSceneCallBack() {
@@ -182,6 +186,11 @@ export default class NewClass extends cc.Component {
     hide6() {
         const hideAction = cc.hide();
         this.starhide6.runAction(hideAction);
+    }
+
+    hide7() {
+        const hideAction = cc.hide();
+        this.starhide7.runAction(hideAction);
     }
 
     show() {

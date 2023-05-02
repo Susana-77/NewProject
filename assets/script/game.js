@@ -1,4 +1,4 @@
-const loopWidth = {loop1:2400,loop2:1800,loop3:2400,loop4:2880};
+const loopWidth = {loop1:2400,loop2:1800,loop3:3200,loop4:2880};
 
 cc.Class({
   name: 'bg',
