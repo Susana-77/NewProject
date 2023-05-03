@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-desktop",groupList:["ball","block","ground"],collisionMatrix:[[false,true,true],[true,false,false],[true,false,false]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/scene/menu.fire",orientation:"landscape",jsList:[],bundleVers:{internal:"d17e2",main:"7400c"}};

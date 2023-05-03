@@ -14,10 +14,10 @@ cc.Class({
     manager.enabled = true;
 
     // Enabled draw collider
-    manager.enabledDebugDraw = true;
+    manager.enabledDebugDraw = false;
 
     // Enabled draw collider bounding box
-    manager.enabledDrawBoundingBox = true;
+    manager.enabledDrawBoundingBox = false;
   },
 
 });
