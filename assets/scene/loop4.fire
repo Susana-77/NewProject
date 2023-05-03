@@ -2827,7 +2827,7 @@
       "__id__": 55
     },
     "_enabled": true,
-    "restartScene": "loop1",
+    "restartScene": "loop4",
     "menuScene": "menu",
     "_id": "d2R/o1cNxGe5/v0VyC6PdD"
   },
@@ -11764,6 +11764,7 @@
     },
     "starhide5": null,
     "starhide6": null,
+    "starhide7": null,
     "sceneName": "done4",
     "_id": "eayHbbb15O+LWbBIOZqPSK"
   },
@@ -14490,6 +14491,7 @@
     "starhide4": null,
     "starhide5": null,
     "starhide6": null,
+    "starhide7": null,
     "sceneName": "done4",
     "_id": "16DH5VentP+Jq3xt6ATJSm"
   },
@@ -17788,6 +17790,7 @@
     "starhide4": null,
     "starhide5": null,
     "starhide6": null,
+    "starhide7": null,
     "sceneName": "done4",
     "_id": "33kv4xisRH8KNl08qgJjMO"
   },
@@ -19188,6 +19191,7 @@
     "starhide4": null,
     "starhide5": null,
     "starhide6": null,
+    "starhide7": null,
     "sceneName": "done4",
     "_id": "54Se7UxHNBYY+NF4IrHpRO"
   },
@@ -23430,6 +23434,7 @@
     "starhide4": null,
     "starhide5": null,
     "starhide6": null,
+    "starhide7": null,
     "sceneName": "done4",
     "_id": "64lBDJ/fJOpJT4eaJ0PaSB"
   },
