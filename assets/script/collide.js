@@ -4,11 +4,7 @@ cc.Class({
   properties: {
     is_enable: true, //是否开启碰撞检测系统
     is_debug: false, //是否显示碰撞检测区域
-    collider: cc.BoxCollider,
-    audioSource: {
-      type: cc.AudioSource,
-      default: null,
-    },
+
   },
 
   start() {
@@ -18,17 +14,10 @@ cc.Class({
     manager.enabled = true;
 
     // Enabled draw collider
-    manager.enabledDebugDraw = true;
+    manager.enabledDebugDraw = false;
 
     // Enabled draw collider bounding box
-    manager.enabledDrawBoundingBox = true;
+    manager.enabledDrawBoundingBox = false;
   },
 
-  onCollisionEnter: function (other, self) {
-    this.playAudio();
-  },
-
-  playAudio() {
-    this.audioSource.play();
-  },
 });

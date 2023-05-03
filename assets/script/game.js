@@ -1,88 +1,48 @@
+const loopWidth = {loop1:2400,loop2:1800,loop3:3200,loop4:2880};
+
 cc.Class({
+  name: 'bg',
   extends: cc.Component,
 
   properties: {
-    ballNode: cc.Node,
-    blockPrefab: cc.Prefab,
-    blockAreaNode: cc.Node,
-    blockNode: cc.Node,
-    // blockNodeArr: {
-    //     default: [],
-    //     type: Block
-    // },
-    audioSource: {
+
+    groupAreaNode: cc.Node,
+    groupNode1: cc.Node,
+    groupNode2: cc.Node,
+    groupNode3: cc.Node,
+    groupNode4: cc.Node,
+    groupNode5: cc.Node,
+    groupNode6: cc.Node,
+    groupNode7: cc.Node,
+    groupNode8: cc.Node,
+
+    metroNome: {
       type: cc.AudioSource,
       default: null,
+      _preload: true,
+      isPlaying: false,
     },
   },
 
   onLoad() {
-    this.initPhysics();
-    this.node.on("touchstart", this.boost, this);
-    this.gameStart = 0;
-    this.initBlock();
-    console.log('onload');
-  },
-
-  onDestroy() {
-    this.node.off("touchstart", this.boost, this);
-  },
-
-  update(dt) {
-    if (this.gameStart) {
-      let speed = -250 * dt;
-
-      for (let blockNode of this.blockNodeArr) {
-        blockNode.x += speed;
-
-        if (blockNode.x < -cc.winSize.width / 2 - blockNode.width / 2) {
-          blockNode.x = this.getLastBlockPosX() + 200;
-        }
-      }
-    }
-  },
-
-  getLastBlockPosX() {
-    let posX = 0;
-    for (let blockNode of this.blockNodeArr) {
-      if (blockNode.x > posX) {
-        posX = blockNode.x;
-      }
-    }
-    return posX;
+    console.log(cc.director.getScene().name);
+    this.initGroup();
   },
 
   //初始化跳板
-  initBlock() {
-    this.lastBlockPosX = this.ballNode.x; //最后一个方块的x轴
-    this.blockNodeArr = [];
-    for (let i = 0; i < 10; i++) {
-      let blockNode = cc.instantiate(this.blockNode);
-      blockNode.active = true
-      blockNode.x = this.lastBlockPosX;
-      blockNode.y = -128;
-      this.blockAreaNode.addChild(blockNode);
-      this.blockNodeArr.push(blockNode);
+  initGroup(id = 1) {
 
-      this.lastBlockPosX += 200;
-    }
+    const defaultNode = this[`groupNode${id}`]
+    const preWidth = loopWidth[cc.director.getScene().name]-236;
+
+    let groupNode = cc.instantiate(defaultNode);
+
+    groupNode.active = true;
+    groupNode.x = preWidth;
+    groupNode.y = defaultNode.y;
+    groupNode.getComponent("blockgroup").isStatic = false;
+
+    this.groupAreaNode.addChild(groupNode);
   },
 
-  //初始化物理引擎
-  initPhysics() {
-    let manager = cc.director.getPhysicsManager();
-    manager.enabled = true;
-    manager.gravity = cc.v2(0, -100);
-  },
-
-
-  //加速
-  boost() {
-    if (this.ballNode.getComponent("ball").initVel) {
-      let rigidBody = this.ballNode.getComponent(cc.RigidBody);
-      rigidBody.linearVelocity = cc.v2(0, -1600);
-      this.gameStart = 1;
-      console.log("加速");
-    }
-  },
 });

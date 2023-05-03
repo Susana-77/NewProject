@@ -2,7 +2,7 @@
   "migrate-history": [
     "cloud-function"
   ],
-  "start-scene": "367f315e-ec0e-400e-b1d2-b756293077d9",
+  "start-scene": "246dd11c-15f1-47a0-bca7-3e8a4ae383ce",
   "group-list": [
     "ball",
     "block",
@@ -12,14 +12,15 @@
     [
       false,
       true,
+      true
+    ],
+    [
+      true,
+      false,
       false
     ],
     [
       true,
-      false
-    ],
-    [
-      false,
       false,
       false
     ]
@@ -49,5 +50,6 @@
     "audience": {
       "enable": false
     }
-  }
+  },
+  "last-module-event-record-time": 1682922093622
 }
